@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NTESHIP - Build industry-ready skills with real projects, internships, courses, certifications, and mentorship from industry experts.">
+    <meta name="keywords" content="courses, internships, projects, certification, mentorship, skills development">
+    <meta name="author" content="NTESHIP">
+    <meta name="theme-color" content="#4F46E5">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="NTESHIP - Build Industry-Ready Skills With Real Projects">
+    <meta property="og:description" content="Accelerate your career with industry-led courses, paid internships, and real-world projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nteship.com">
+    <meta property="og:image" content="images/og-image.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>NTESHIP — Build Industry-Ready Skills With Real Projects</title>
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+</head>
+<body>
+    <!-- ============ SCROLL PROGRESS BAR ============ -->
+    <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <!-- ============ LOADING OVERLAY ============ -->
+    <div id="loading-overlay" class="loading-overlay" aria-hidden="true">
+        <div class="loader" role="status">
+            <div class="loader-ring"></div>
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- ============ HEADER / NAVIGATION ============ -->
+    <header id="header" class="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <a href="#" class="logo" aria-label="NTESHIP Home">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="url(#logo-gradient)"/>
+                    <path d="M8 22V10l8 6 8-6v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4F46E5"/>
+                            <stop offset="1" stop-color="#06B6D4"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">NTESHIP</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links" role="menubar">
+                <li role="none"><a href="#courses" class="nav-link" role="menuitem">Courses</a></li>
+                <li role="none"><a href="#internships" class="nav-link" role="menuitem">Internships</a></li>
+                <li role="none"><a href="#testimonials" class="nav-link" role="menuitem">Success Stories</a></li>
+                <li role="none"><a href="#pricing" class="nav-link" role="menuitem">Pricing</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <a href="login.html" class="btn btn-ghost btn-sm">Login</a>
+                <a href="register.html" class="btn btn-primary btn-sm">Sign Up</a>
+                <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- ============ HERO SECTION ============ -->
+        <section id="hero" class="hero section" aria-label="Hero">
+            <div class="hero-bg-gradient" aria-hidden="true"></div>
+            <div class="hero-particles" aria-hidden="true">
+                <div class="particle p1"></div>
+                <div class="particle p2"></div>
+                <div class="particle p3"></div>
+                <div class="particle p4"></div>
+            </div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge reveal-up">🚀 Now Accepting Applications</span>
+                    <h1 class="hero-title reveal-up" style="transition-delay: 0.1s">
+                        Build <span class="gradient-text">Industry-Ready</span> Skills<br>
+                        With <span class="gradient-text-alt">Real Projects</span>
+                    </h1>
+                    <p class="hero-subtitle reveal-up" id="typing-text" style="transition-delay: 0.2s"></p>
+                    <div class="hero-cta reveal-up" style="transition-delay: 0.3s">
+                        <a href="#courses" class="btn btn-primary btn-lg ripple-btn">
+                            <span>Explore Courses</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                        <a href="#internships" class="btn btn-outline btn-lg ripple-btn">
+                            <span>Start Internship</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </a>
+                    </div>
+                    <div class="hero-stats reveal-up" style="transition-delay: 0.4s">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">10,000+</span>
+                            <span class="hero-stat-label">Happy Students</span>
+                        </div>
+                        <div class="hero-stat-divider" aria-hidden="true"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">250+</span>
+                            <span class="hero-stat-label">Courses</span>
+                        </div>
+                        <div class="hero-stat-divider" aria-hidden="true"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">95%</span>
+                            <span class="hero-stat-label">Placement Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-right" style="transition-delay: 0.3s">
+                    <div class="dashboard-illustration" id="dashboard-illustration">
+                        <div class="dashboard-card card-1">
+                            <div class="dash-card-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <div>
+                                <div class="dash-card-label">Projects</div>
+                                <div class="dash-card-value">48 <span class="dash-card-unit">completed</span></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-card card-2">
+                            <div class="dash-card-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            </div>
+                            <div>
+                                <div class="dash-card-label">Skills Gained</div>
+                                <div class="dash-card-value">12+</div>
+                            </div>
+                        </div>
+                        <div class="dashboard-card card-3">
+                            <div class="dash-card-icon" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <div class="dash-card-label">Mentors</div>
+                                <div class="dash-card-value">100+</div>
+                            </div>
+                        </div>
+                        <div class="dash-chart" aria-hidden="true">
+                            <svg width="200" height="100" viewBox="0 0 200 100">
+                                <polyline fill="none" stroke="url(#chart-gradient)" stroke-width="3" points="0,80 20,60 40,70 60,40 80,45 100,20 120,30 140,10 160,25 180,15 200,30"/>
+                                <defs>
+                                    <linearGradient id="chart-gradient" x1="0" y1="0" x2="1" y2="0">
+                                        <stop stop-color="#4F46E5" stop-opacity="1"/>
+                                        <stop offset="1" stop-color="#06B6D4" stop-opacity="1"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="floating-badge badge-grad" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Top Rated</span>
+                        </div>
+                        <div class="floating-badge badge-students" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                            <span>2k+ Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TRUSTED COMPANIES ============ -->
+        <section id="trusted" class="trusted section" aria-label="Trusted by companies">
+            <div class="container">
+                <p class="trusted-label reveal-up">Trusted by students hired at</p>
+                <div class="trusted-scroll" aria-hidden="true">
+                    <div class="trusted-track">
+                        <div class="trusted-item">Google</div>
+                        <div class="trusted-item">Microsoft</div>
+                        <div class="trusted-item">Amazon</div>
+                        <div class="trusted-item">Adobe</div>
+                        <div class="trusted-item">Infosys</div>
+                        <div class="trusted-item">TCS</div>
+                        <div class="trusted-item">Accenture</div>
+                        <div class="trusted-item">IBM</div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="trusted-item">Google</div>
+                        <div class="trusted-item">Microsoft</div>
+                        <div class="trusted-item">Amazon</div>
+                        <div class="trusted-item">Adobe</div>
+                        <div class="trusted-item">Infosys</div>
+                        <div class="trusted-item">TCS</div>
+                        <div class="trusted-item">Accenture</div>
+                        <div class="trusted-item">IBM</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FEATURED COURSES ============ -->
+        <section id="courses" class="courses section" aria-label="Featured courses">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge reveal-up">Courses</span>
+                    <h2 class="section-title reveal-up" style="transition-delay: 0.1s">Featured <span class="gradient-text">Courses</span></h2>
+                    <p class="section-desc reveal-up" style="transition-delay: 0.2s">Industry-designed curriculum to make you job-ready</p>
+                    <div class="course-controls reveal-up" style="transition-delay: 0.3s">
+                        <div class="search-wrapper">
+                            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            <input type="text" id="course-search" class="course-search" placeholder="Search courses..." aria-label="Search courses">
+                        </div>
+                        <div class="filter-btns" id="filter-btns" role="tablist" aria-label="Filter by category">
+                            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                            <button class="filter-btn" data-filter="frontend" role="tab">Frontend</button>
+                            <button class="filter-btn" data-filter="backend" role="tab">Backend</button>
+                            <button class="filter-btn" data-filter="fullstack" role="tab">Full Stack</button>
+                            <button class="filter-btn" data-filter="data" role="tab">Data Science</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-grid" id="courses-grid">
+                    <!-- Course 1 -->
+                    <article class="course-card reveal-up" data-category="frontend" data-name="Full Stack Web Development">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&q=80" alt="Full Stack Web Development course thumbnail" loading="lazy" width="400" height="225">
+                            <span class="course-badge">Popular</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-meta">
+                                <span class="course-level">Advanced</span>
+                                <span class="course-duration">12 Weeks</span>
+                            </div>
+                            <h3 class="course-title">Full Stack Web Development</h3>
+                            <div class="course-instructor">
+                                <div class="instructor-avatar" style="background:#4F46E5">SK</div>
+                                <span>Sahil Kapoor · Senior Engineer at Google</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars" aria-label="4.8 out of 5 stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <span class="rating-text">4.8 <span class="rating-count">(2.4k students)</span></span>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-price">₹3,999</span>
+                                <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Course 2 -->
+                    <article class="course-card reveal-up" data-category="backend" data-name="Backend Engineering with Node.js">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=80" alt="Backend Engineering course thumbnail" loading="lazy" width="400" height="225">
+                            <span class="course-badge">New</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-meta">
+                                <span class="course-level">Intermediate</span>
+                                <span class="course-duration">10 Weeks</span>
+                            </div>
+                            <h3 class="course-title">Backend Engineering with Node.js</h3>
+                            <div class="course-instructor">
+                                <div class="instructor-avatar" style="background:#06B6D4">AM</div>
+                                <span>Anjali Mehta · Senior Engineer at Microsoft</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars" aria-label="4.7 out of 5 stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <span class="rating-text">4.7 <span class="rating-count">(1.8k students)</span></span>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-price">₹3,499</span>
+                                <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Course 3 -->
+                    <article class="course-card reveal-up" data-category="fullstack" data-name="React & Next.js Masterclass">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&q=80" alt="React & Next.js Masterclass thumbnail" loading="lazy" width="400" height="225">
+                            <span class="course-badge certification">Certification</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-meta">
+                                <span class="course-level">Advanced</span>
+                                <span class="course-duration">8 Weeks</span>
+                            </div>
+                            <h3 class="course-title">React & Next.js Masterclass</h3>
+                            <div class="course-instructor">
+                                <div class="instructor-avatar" style="background:#F97316">RJ</div>
+                                <span>Rahul Joshi · Senior Engineer at Vercel</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars" aria-label="4.9 out of 5 stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <span class="rating-text">4.9 <span class="rating-count">(3.1k students)</span></span>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-price">₹4,999</span>
+                                <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Course 4 -->
+                    <article class="course-card reveal-up" data-category="data" data-name="Data Science & Machine Learning">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80" alt="Data Science course thumbnail" loading="lazy" width="400" height="225">
+                        </div>
+                        <div class="course-body">
+                            <div class="course-meta">
+                                <span class="course-level">Intermediate</span>
+                                <span class="course-duration">14 Weeks</span>
+                            </div>
+                            <h3 class="course-title">Data Science & Machine Learning</h3>
+                            <div class="course-instructor">
+                                <div class="instructor-avatar" style="background:#10B981">PN</div>
+                                <span>Priya Nair · Data Scientist at Amazon</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars" aria-label="4.6 out of 5 stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <span class="rating-text">4.6 <span class="rating-count">(1.2k students)</span></span>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-price">₹5,499</span>
+                                <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Course 5 -->
+                    <article class="course-card reveal-up" data-category="frontend" data-name="UI/UX Design Fundamentals">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=80" alt="UI/UX Design course thumbnail" loading="lazy" width="400" height="225">
+                            <span class="course-badge">Trending</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-meta">
+                                <span class="course-level">Beginner</span>
+                                <span class="course-duration">6 Weeks</span>
+                            </div>
+                            <h3 class="course-title">UI/UX Design Fundamentals</h3>
+                            <div class="course-instructor">
+                                <div class="instructor-avatar" style="background:#8B5CF6">AK</div>
+                                <span>Aisha Khan · Design Lead at Adobe</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars" aria-label="4.8 out of 5 stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <span class="rating-text">4.8 <span class="rating-count">(1.6k students)</span></span>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-price">₹2,999</span>
+                                <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Course 6 -->
+                    <article class="course-card reveal-up" data-category="backend" data-name="Python & Django Backend">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&q=80" alt="Python & Django course thumbnail" loading="lazy" width="400" height="225">
+                        </div>
+                        <div class="course-body">
+                            <div class="course-meta">
+                                <span class="course-level">Intermediate</span>
+                                <span class="course-duration">10 Weeks</span>
+                            </div>
+                            <h3 class="course-title">Python & Django Backend</h3>
+                            <div class="course-instructor">
+                                <div class="instructor-avatar" style="background:#EC4899">VS</div>
+                                <span>Vikram Singh · Engineer at Infosys</span>
+                            </div>
+                            <div class="course-rating">
+                                <div class="stars" aria-label="4.5 out of 5 stars">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <span class="rating-text">4.5 <span class="rating-count">(980 students)</span></span>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-price">₹2,999</span>
+                                <a href="#" class="btn btn-primary btn-sm">Enroll Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ INTERNSHIP PROGRAMS ============ -->
+        <section id="internships" class="internships section" aria-label="Internship programs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge reveal-up">Internships</span>
+                    <h2 class="section-title reveal-up" style="transition-delay: 0.1s">Internship <span class="gradient-text">Programs</span></h2>
+                    <p class="section-desc reveal-up" style="transition-delay: 0.2s">Real experience. Real mentorship. Real results.</p>
+                </div>
+                <div class="internship-grid">
+                    <article class="internship-card reveal-up" style="transition-delay: 0.1s">
+                        <div class="internship-badge animated-badge">Open</div>
+                        <div class="internship-company">
+                            <div class="company-logo" style="background:linear-gradient(135deg,#4285F4,#34A853)">G</div>
+                            <div>
+                                <h3 class="internship-title">Frontend Engineering Intern</h3>
+                                <span class="company-name">Google</span>
+                            </div>
+                        </div>
+                        <div class="internship-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <span>6 Months</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <span>₹25,000/mo</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Certificate Included</span>
+                            </div>
+                        </div>
+                        <div class="internship-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">CSS</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Apply Now</a>
+                    </article>
+
+                    <article class="internship-card reveal-up" style="transition-delay: 0.2s">
+                        <div class="internship-badge animated-badge">Open</div>
+                        <div class="internship-company">
+                            <div class="company-logo" style="background:linear-gradient(135deg,#00A4EF,#0078D4)">M</div>
+                            <div>
+                                <h3 class="internship-title">Full Stack Developer Intern</h3>
+                                <span class="company-name">Microsoft</span>
+                            </div>
+                        </div>
+                        <div class="internship-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <span>6 Months</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <span>₹30,000/mo</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Certificate + PPO</span>
+                            </div>
+                        </div>
+                        <div class="internship-skills">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Azure</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Apply Now</a>
+                    </article>
+
+                    <article class="internship-card reveal-up" style="transition-delay: 0.3s">
+                        <div class="internship-badge animated-badge">Open</div>
+                        <div class="internship-company">
+                            <div class="company-logo" style="background:linear-gradient(135deg,#FF9900,#146EB4)">A</div>
+                            <div>
+                                <h3 class="internship-title">Data Science Intern</h3>
+                                <span class="company-name">Amazon</span>
+                            </div>
+                        </div>
+                        <div class="internship-details">
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <span>3 Months</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                <span>₹20,000/mo</span>
+                            </div>
+                            <div class="detail-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Certificate Included</span>
+                            </div>
+                        </div>
+                        <div class="internship-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">ML</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-block">Apply Now</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ WHY CHOOSE US ============ -->
+        <section id="why-us" class="why-us section" aria-label="Why choose us">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge reveal-up">Why Us</span>
+                    <h2 class="section-title reveal-up" style="transition-delay: 0.1s">Why <span class="gradient-text">Choose</span> Us</h2>
+                    <p class="section-desc reveal-up" style="transition-delay: 0.2s">We don't just teach — we build careers</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card reveal-up" style="transition-delay: 0.1s">
+                        <div class="why-icon" style="background:rgba(79,70,229,0.1)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <h3>Live Projects</h3>
+                        <p>Work on real-world projects that solve actual business problems</p>
+                    </div>
+                    <div class="why-card reveal-up" style="transition-delay: 0.2s">
+                        <div class="why-icon" style="background:rgba(6,182,212,0.1)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Expert Mentorship</h3>
+                        <p>1:1 guidance from engineers at Google, Microsoft & Amazon</p>
+                    </div>
+                    <div class="why-card reveal-up" style="transition-delay: 0.3s">
+                        <div class="why-icon" style="background:rgba(249,115,22,0.1)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <h3>Certificates</h3>
+                        <p>Industry-recognized certificates to boost your resume</p>
+                    </div>
+                    <div class="why-card reveal-up" style="transition-delay: 0.4s">
+                        <div class="why-icon" style="background:rgba(16,185,129,0.1)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <h3>Resume Building</h3>
+                        <p>ATS-optimized resumes crafted by HR professionals</p>
+                    </div>
+                    <div class="why-card reveal-up" style="transition-delay: 0.5s">
+                        <div class="why-icon" style="background:rgba(139,92,246,0.1)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <h3>Mock Interviews</h3>
+                        <p>Real interview simulations with detailed feedback</p>
+                    </div>
+                    <div class="why-card reveal-up" style="transition-delay: 0.6s">
+                        <div class="why-icon" style="background:rgba(236,72,153,0.1)">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h3>Placement Assistance</h3>
+                        <p>95% placement rate with 200+ hiring partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS ============ -->
+        <section id="testimonials" class="testimonials section" aria-label="Student testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge reveal-up">Testimonials</span>
+                    <h2 class="section-title reveal-up" style="transition-delay: 0.1s">Success <span class="gradient-text">Stories</span></h2>
+                    <p class="section-desc reveal-up" style="transition-delay: 0.2s">Hear from our students who landed their dream jobs</p>
+                </div>
+                <div class="testimonial-slider-container reveal-up" style="transition-delay: 0.3s">
+                    <div class="testimonial-slider" id="testimonial-slider" role="region" aria-label="Student testimonials">
+                        <div class="testimonial-slide active">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <p class="testimonial-text">"NTESHIP completely transformed my career. Within 4 months of joining, I was placed at Google as a Frontend Engineer. The mentorship and real projects made all the difference."</p>
+                                <div class="testimonial-author">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXVzZXItcm91bmQtaWNvbiBsdWNpZGUtdXNlci1yb3VuZCI+PGNpcmNsZSBjeD0iMTIiIGN5PSI4IiByPSI1Ii8+PHBhdGggZD0iTTIwIDIxYTggOCAwIDAgMC0xNiAwIi8+PC9zdmc+" alt="Rahul Sharma" loading="lazy" width="48" height="48">
+                                    <div>
+                                        <strong>Rahul Sharma</strong>
+                                        <span>Frontend Engineer at Google</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <p class="testimonial-text">"The internship program at NTESHIP helped me get real industry exposure. I worked on live projects and received a PPO from Microsoft. Best decision I ever made!"</p>
+                                <div class="testimonial-author">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXVzZXItcm91bmQtaWNvbiBsdWNpZGUtdXNlci1yb3VuZCI+PGNpcmNsZSBjeD0iMTIiIGN5PSI4IiByPSI1Ii8+PHBhdGggZD0iTTIwIDIxYTggOCAwIDAgMC0xNiAwIi8+PC9zdmc+" alt="Priya Patel" loading="lazy" width="48" height="48">
+                                    <div>
+                                        <strong>Priya Patel</strong>
+                                        <span>SDE Intern at Microsoft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#F97316" stroke="#F97316"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                </div>
+                                <p class="testimonial-text">"The Data Science course was incredibly well-structured. The mentors were always available, and the projects reflected real industry challenges. I'm now working at Amazon!"</p>
+                                <div class="testimonial-author">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXVzZXItcm91bmQtaWNvbiBsdWNpZGUtdXNlci1yb3VuZCI+PGNpcmNsZSBjeD0iMTIiIGN5PSI4IiByPSI1Ii8+PHBhdGggZD0iTTIwIDIxYTggOCAwIDAgMC0xNiAwIi8+PC9zdmc+" alt="Arun Kumar" loading="lazy" width="48" height="48">
+                                    <div>
+                                        <strong>Arun Kumar</strong>
+                                        <span>Data Scientist at Amazon</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" id="prev-testimonial" aria-label="Previous testimonial">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                        </button>
+                        <div class="slider-dots" id="slider-dots" role="tablist" aria-label="Testimonial slides">
+                            <button class="dot active" role="tab" aria-selected="true" aria-label="Slide 1" data-index="0"></button>
+                            <button class="dot" role="tab" aria-selected="false" aria-label="Slide 2" data-index="1"></button>
+                            <button class="dot" role="tab" aria-selected="false" aria-label="Slide 3" data-index="2"></button>
+                        </div>
+                        <button class="slider-btn next-btn" id="next-testimonial" aria-label="Next testimonial">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ STATISTICS ============ -->
+        <section id="statistics" class="statistics section" aria-label="Platform statistics">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal-up" style="transition-delay: 0.1s">
+                        <span class="stat-number" data-target="10000">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Happy Students</span>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.2s">
+                        <span class="stat-number" data-target="250">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Courses</span>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.3s">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Industry Mentors</span>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.4s">
+                        <span class="stat-number" data-target="95">0</span>
+                        <span class="stat-percent">%</span>
+                        <span class="stat-label">Placement Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PRICING ============ -->
+        <section id="pricing" class="pricing section" aria-label="Pricing plans">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge reveal-up">Pricing</span>
+                    <h2 class="section-title reveal-up" style="transition-delay: 0.1s">Simple, <span class="gradient-text">Transparent</span> Pricing</h2>
+                    <p class="section-desc reveal-up" style="transition-delay: 0.2s">Choose the plan that fits your goals</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card reveal-up" style="transition-delay: 0.1s">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Basic</h3>
+                            <p class="pricing-desc">Perfect for getting started</p>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">₹</span>
+                                <span class="pricing-value">999</span>
+                                <span class="pricing-period">/mo</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>5 Courses Access</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Basic Projects</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Community Support</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Certificate of Completion</span>
+                            </li>
+                            <li class="feature-disabled">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                <span>1:1 Mentorship</span>
+                            </li>
+                            <li class="feature-disabled">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9CA3AF" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                                <span>Mock Interviews</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-outline btn-block">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card pricing-popular reveal-up" style="transition-delay: 0.2s">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Pro</h3>
+                            <p class="pricing-desc">For serious learners</p>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">₹</span>
+                                <span class="pricing-value">2,499</span>
+                                <span class="pricing-period">/mo</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>All Courses Access</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Real-World Projects</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Priority Support</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Certificates + Badges</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>1:1 Mentorship (4 sessions)</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Mock Interviews (2 included)</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-primary btn-block">Get Pro</a>
+                    </div>
+
+                    <div class="pricing-card reveal-up" style="transition-delay: 0.3s">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Premium</h3>
+                            <p class="pricing-desc">Ultimate career accelerator</p>
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">₹</span>
+                                <span class="pricing-value">4,999</span>
+                                <span class="pricing-period">/mo</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Everything in Pro</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Unlimited Projects</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Dedicated Mentor</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Guaranteed Internship</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Placement Assistance</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Resume & LinkedIn Review</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-outline btn-block">Go Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FAQ ============ -->
+        <section id="faq" class="faq section" aria-label="Frequently asked questions">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge reveal-up">FAQ</span>
+                    <h2 class="section-title reveal-up" style="transition-delay: 0.1s">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                    <p class="section-desc reveal-up" style="transition-delay: 0.2s">Everything you need to know about NTESHIP</p>
+                </div>
+                <div class="faq-list reveal-up" style="transition-delay: 0.3s" role="list">
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq1-answer">
+                            <span>Who can join NTESHIP programs?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer" id="faq1-answer" role="region">
+                            <p>Anyone with a passion for learning! Whether you're a student, a recent graduate, or a professional looking to upskill, NTESHIP has programs tailored for all skill levels — from beginners to advanced learners.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq2-answer">
+                            <span>How are the internships structured?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer" id="faq2-answer" role="region">
+                            <p>Our internships are 3-6 month programs where you work on real projects under the guidance of industry mentors. You'll receive a stipend, hands-on experience, and a certificate upon completion. Top performers often receive PPOs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq3-answer">
+                            <span>Do you offer placement guarantee?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer" id="faq3-answer" role="region">
+                            <p>Our Premium plan includes a guaranteed internship placement. Overall, we have a 95% placement support rate, with 200+ hiring partners including Google, Microsoft, Amazon, and more. We're committed to your career success.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq4-answer">
+                            <span>What kind of certificates will I receive?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer" id="faq4-answer" role="region">
+                            <p>You'll receive industry-recognized certificates for each course you complete, along with project completion badges. Our certificates are verified and can be added directly to your LinkedIn profile.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq5-answer">
+                            <span>Can I switch plans anytime?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer" id="faq5-answer" role="region">
+                            <p>Absolutely! You can upgrade or downgrade your plan at any time. If you upgrade, you'll get prorated access to all new features immediately. There are no long-term contracts — you can cancel anytime.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq6-answer">
+                            <span>Is there a refund policy?</span>
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="faq-answer" id="faq6-answer" role="region">
+                            <p>Yes! We offer a 7-day money-back guarantee on all plans. If you're not satisfied within the first week, we'll issue a full refund — no questions asked.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="contact section" aria-label="Contact us">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge reveal-up">Contact</span>
+                    <h2 class="section-title reveal-up" style="transition-delay: 0.1s">Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="section-desc reveal-up" style="transition-delay: 0.2s">Have questions? We'd love to hear from you</p>
+                </div>
+                <div class="contact-grid">
+                    <form class="contact-form reveal-up" style="transition-delay: 0.3s" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="form-name">Full Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="Kunal Dinho" required aria-required="true" autocomplete="name">
+                            <span class="form-error" id="name-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" id="form-email" name="email" placeholder="dinho@example.com" required aria-required="true" autocomplete="email">
+                            <span class="form-error" id="email-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">Phone Number</label>
+                            <input type="tel" id="form-phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
+                            <span class="form-error" id="phone-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" rows="5" placeholder="Tell us about your goals..." required aria-required="true"></textarea>
+                            <span class="form-error" id="message-error" role="alert"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg ripple-btn">Send Message</button>
+                    </form>
+                    <div class="contact-info reveal-up" style="transition-delay: 0.4s">
+                        <div class="contact-map" aria-label="Map placeholder">
+                            <svg width="100%" height="100%" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+                                <rect width="600" height="400" fill="var(--map-bg, #E2E8F0)"/>
+                                <circle cx="300" cy="200" r="20" fill="#4F46E5" opacity="0.8"/>
+                                <circle cx="300" cy="200" r="8" fill="#4F46E5"/>
+                                <path d="M300 180 Q 350 150 380 200 Q 350 250 300 220 Q 250 250 220 200 Q 250 150 300 180" fill="#4F46E5" opacity="0.2"/>
+                                <text x="300" y="310" text-anchor="middle" fill="#64748B" font-size="14" font-family="Inter, sans-serif">Maharasthra, India</text>
+                            </svg>
+                            <div class="map-pulse" aria-hidden="true"></div>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span>Maharasthra, India</span>
+                            </div>
+                            <div class="contact-detail">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <span>dinho@nteship.com</span>
+                            </div>
+                            <div class="contact-detail">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <span>+91 98765 43210</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer section" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" aria-label="NTESHIP Home">
+                        <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                            <rect width="32" height="32" rx="8" fill="url(#logo-gradient-footer)"/>
+                            <path d="M8 22V10l8 6 8-6v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="logo-gradient-footer" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4F46E5"/>
+                                    <stop offset="1" stop-color="#06B6D4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">NTESHIP</span>
+                    </a>
+                    <p class="footer-desc">Building industry-ready skills through real projects, expert mentorship, and career-focused programs.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/home" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://github.com/Kunal-Dinho" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@kunaldinhoxvii" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#internships">Internships</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Career Guide</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Get the latest courses and career tips in your inbox</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+                        <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NTESHIP. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script src="js/accordion.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/counter.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
