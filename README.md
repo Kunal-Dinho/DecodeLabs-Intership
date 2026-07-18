@@ -11,12 +11,19 @@ NTESHIP is a modern, fully responsive educational platform designed to help stud
 - Search and filter functionality by category
 - Course cards with ratings, instructor details, pricing, and duration
 - Categories: All, Frontend, Backend, Full Stack, Data Science
+- Dedicated detail pages with curriculum, outcomes, requirements, and enrolment link
 
 ### 💼 Internship Programs
 - **Paid internships** at top companies (Google, Microsoft, Amazon)
 - 3-6 month programs with real project experience
 - Stipend details, required skills, and certificate/PPO information
 - Direct "Apply Now" functionality
+- Detail pages with eligibility, responsibilities, benefits, and an application form
+
+### 🔌 Course & Internship API
+- `GET /api/courses` and `GET /api/courses/:slug`
+- `GET /api/internships` and `GET /api/internships/:slug`
+- `POST /api/applications` validates and stores internship applications locally
 
 ### 🎯 Why Choose Us
 - **Live Projects** - Real-world problem solving
@@ -81,6 +88,7 @@ NTESHIP is a modern, fully responsive educational platform designed to help stud
 | `js/slider.js` | Testimonial slider with auto-play and navigation |
 | `js/accordion.js` | FAQ accordion with smooth open/close |
 | `js/counter.js` | Animated statistics counter on scroll |
+| `js/detail.js` | Loads detail data and submits internship applications |
 
 ### Accessibility
 - ARIA labels and roles throughout
@@ -124,16 +132,11 @@ NTESHIP/
    cd NTESHIP
    ```
 
-3. **Launch the application**
-   - Open `index.html` in your browser
-   - Or use a local server:
-     ```bash
-     # Using Python
-     python -m http.server 8000
-     
-     # Using Node.js
-     npx serve .
-     ```
+3. **Launch the application and API**
+   ```bash
+   npm start
+   ```
+   Then open `http://localhost:3000`. Detail pages use this server to fetch data and submit internship applications.
 
 ## 🌐 Live Demo
 
